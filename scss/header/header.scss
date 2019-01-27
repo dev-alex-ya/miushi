@@ -1,0 +1,30 @@
+.header{
+	border: 1px solid red;
+	.navbar{
+		border: 1px solid lightblue;
+		.navbar-toggler{
+
+			.navbar-toggler-icon{
+				background-image: url("img/burger.svg");
+			}
+		}
+		
+
+		.navbar-brend{			
+			background-image: url("img/MiushiLogo.png");
+		}
+
+		.menu-list{
+			list-style-type: none;
+
+			.nav-item a{
+				color: #000;
+			}
+
+			.nav-item.active a{
+				color: #ffffff;
+				background-color: var(--mi-green);
+			}
+		}
+	}
+}

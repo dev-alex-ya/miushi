@@ -1,0 +1,28 @@
+:root{
+	--mi-green: #84c604;
+
+}
+
+
+html{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+}
+
+.container{
+	box-sizing: border-box;
+	border: 1px solid lightgreen;
+	margin: 0 auto;
+	width: 320px;
+}
+
+
+
+
+
+
+@import "header/header.scss";
+@import "main/main.scss";
+@import "footer/footer.scss";
