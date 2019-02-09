@@ -1,28 +1,40 @@
-:root{
-	--mi-green: #84c604;
-
+:root {
+    --mi-green: #84c604;
+    --mi-orange: #fd4f10;
 }
 
-
-html{
-  font-size: 16px;
-  font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
-  background-color: #ffffff;
+body {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
 }
 
-.container{
-	box-sizing: border-box;
-	border: 1px solid lightgreen;
-	margin: 0 auto;
-	width: 320px;
+.container {
+    margin: 0 auto;
+    width: 350px;
 }
 
+.card {
+    width: 220px;
+}
 
+@media (min-width: 768px) {
+    .container {
+        margin: 0 auto;
+        width: 780px;
+    }
+}
 
+@media (min-width: 1200px) {
+    .container {
+        margin: 0 auto;
+        width: 1200px;
+    }
+}
 
-
-
+@import "./fonts.scss";
 @import "header/header.scss";
 @import "main/main.scss";
 @import "footer/footer.scss";
+@import "outlines.scss";
