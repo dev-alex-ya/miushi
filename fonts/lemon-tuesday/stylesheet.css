@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Lemon Tuesday';
+    src: url('LemonTuesday.woff2') format('woff2'),
+        url('LemonTuesday.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
