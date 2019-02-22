@@ -51,8 +51,9 @@ $(document).ready(function() {
         // 'around', 'left', or 'right'
         // buttonPosition: 'around'
         
-      });
+    });
 
 
-
+    $('body').showMoreItems();
+    
 });
