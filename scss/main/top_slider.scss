@@ -1,0 +1,28 @@
+.carousel {
+	margin-bottom: 40px;
+
+	img {
+		width: 320px;
+		height: 240px;
+	}
+
+	.carousel-indicators {
+		bottom: -57px;
+
+		li {
+			box-sizing: border-box;
+			border: 2px solid #c4c4c4;
+			border-radius: 50%;
+			width: 12px;
+			height: 12px;
+			margin-left: 10px;
+			margin-right: 10px;
+			background-color: #fff;
+
+			&.active {
+				background-color: #1fba0a;
+				border: none;
+			}
+		}
+	}
+}

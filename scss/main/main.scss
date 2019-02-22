@@ -26,7 +26,8 @@
     .sets {
         margin-top: 3rem;
     }
-    
+
+    @import "top_slider.scss";
     @import "card.scss";
     @import "news_promo.scss";
     @import "ten_reasons.scss";
