@@ -16,7 +16,7 @@ gulp.task("sass", function() {
     .pipe(postcss([
         autoprefixer()
     ]))
-    .pipe(sourcemaps.write('../maps'))
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest("."))
     .pipe(server.stream());
 });
