@@ -21,12 +21,6 @@
 		}
 
 		.menu-list{
-			list-style-type: none;
-
-			.nav-item a{
-				color: #000;
-			}
-
 			.nav-item.active a{
 				color: #ffffff;
 				background-color: var(--mi-green);

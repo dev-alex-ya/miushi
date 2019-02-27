@@ -29,6 +29,19 @@ body {
 	outline: none;
 }
 
+.menu-list{
+    list-style-type: none;
+    // padding: 0;
+    margin: 0;
+
+    .nav-item a{
+        color: #000;
+    }
+
+    .nav-item.active a{
+        cursor: pointer;
+    }
+}
 
 @media (min-width: 768px) {
     .container {
