@@ -6,15 +6,15 @@
         font-weight: 600;
         background-color: #1a2d34;
         padding: 17px 22px;
-
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: flex-end;
         border-radius: 0;
-        border: 1px solid #20353d;
+        border: none;
+        border-top: 1px solid #20353d;
+        border-bottom: 1px solid #20353d;
 
-        
         .ui-icon.iconOpen {            
             background-image: url("img/arrow-top.png");
             width: 20px;
@@ -23,7 +23,6 @@
             background-image: url("img/arrow-bottom.png");
             width: 20px;
         }
-
     }
 
     .ui-accordion-content {
@@ -33,6 +32,7 @@
         border: none;
         border-radius: 0;
         padding: 0;
+        // height: auto !important;
 
         .menu-list{
             list-style-type: none;
@@ -51,6 +51,4 @@
             }
         }
     }
-
-    
 }
