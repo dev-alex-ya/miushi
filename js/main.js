@@ -55,5 +55,15 @@ $(document).ready(function() {
 
 
     $('body').showMoreItems();
+    // $( "#accordion" ).accordion();
+    var icons = {
+        header: "iconClosed",    // custom icon class
+        activeHeader: "iconOpen" // custom icon class
+    };
+    $( "#accordion" ).accordion({
+            icons: icons
+        }
+    );
+
     
 });
