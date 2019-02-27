@@ -4,17 +4,28 @@
         text-align: center;
         font-size: 3rem;
         font-family: 'Lemon Tuesday', sans-serif;
+
+        &::before {
+            position: relative;
+            right: 2rem;
+            content: url("/img/title-left.png");
+        }
+
+        &::after {
+            position: relative;
+            left: 2rem;
+            content: url("/img/title-right.png");
+        }
+
+        &.no-before::before {
+            display: none;
+        }
+        
+        &.no-after::after {
+            display: none;
+        }
     }
-    .headline::before {
-        position: relative;
-        right: 2rem;
-        content: url("/img/title-left.png");
-    }
-    .headline::after {
-        position: relative;
-        left: 2rem;
-        content: url("/img/title-right.png");
-    }
+    
     .slick-slide {
         width: 220px !important;
         margin: 0 15px;
@@ -34,4 +45,5 @@
     @import "feedbacks.scss";
     @import "backwards.scss";
     @import "about.scss";
+    @import "accordion.scss";
 }

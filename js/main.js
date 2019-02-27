@@ -65,5 +65,13 @@ $(document).ready(function() {
         }
     );
 
+    let headlines = $('.headline');
+    for(let i = 0; i < headlines.length; i++) {
+        // console.log(parseInt(headlines[i].scrollWidth));
+        if (parseInt(headlines[i].scrollWidth) > 335) {
+            $(headlines[i]).addClass("no-before");
+            $(headlines[i]).addClass("no-after");
+        }
+    }
     
 });
