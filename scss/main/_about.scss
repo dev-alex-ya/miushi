@@ -1,10 +1,28 @@
 .about {
     font-size: 14px;
-    background-color: red;
+    padding: 30px 15px 70px 15px;
 
     .h3{
         font-size: 20px !important;
         font-family: var(--mi-open-sans);
         font-weight: 800 !important;
+    }
+
+    .showmore-button {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 28px;
+        color: #fd4f10;
+        font-weight: 600;
+
+
+        cursor: pointer; 
+        background-color: #fff;
+        text-transform: uppercase; 
+        text-align: center; 
+        padding: 7px 5px 5px 5px; 
+        margin-top: 5px;
+        border-radius: 4px;
+        border: 1px solid #fd4f10;
     }
 }

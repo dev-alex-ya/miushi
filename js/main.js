@@ -53,6 +53,12 @@ $(document).ready(function() {
         
     });
 
+    $('.show-more').showMore({
+        minheight: 640,
+        buttontxtmore: 'Показать ещё',
+        buttontxtless: 'Скрыть',
+        animationspeed: 1000
+    });
 
     $('body').showMoreItems();
     // $( "#accordion" ).accordion();
