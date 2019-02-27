@@ -1,10 +1,18 @@
 .main {
+    .sets,
+    .rolls,
+    .pizza,
+    .wok {
+        margin-bottom: 30px;
+    }
     .headline {
         margin-bottom: 1rem;
         text-align: center;
         font-size: 3rem;
         font-family: 'Lemon Tuesday', sans-serif;
+    }
 
+    .headline-decorated {
         &::before {
             position: relative;
             right: 2rem;
