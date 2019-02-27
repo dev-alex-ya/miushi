@@ -1,0 +1,56 @@
+.accordion {
+    background-color: #20353d;
+    .ui-accordion-header {
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: #1a2d34;
+        padding: 17px 22px;
+
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+        border-radius: 0;
+        border: 1px solid #20353d;
+
+        
+        .ui-icon.iconOpen {            
+            background-image: url("img/arrow-top.png");
+            width: 20px;
+        }
+        .ui-icon.iconClosed {
+            background-image: url("img/arrow-bottom.png");
+            width: 20px;
+        }
+
+    }
+
+    .ui-accordion-content {
+        // background-color: #20353d;
+        background-color: #20353d;
+        padding: 16px 0;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+
+        .menu-list{
+            list-style-type: none;
+            
+            padding: 10px 0 10px 0;
+        
+            .nav-item a{
+                padding: .5rem 18px;
+                font-size: 12px;
+                line-height: 18px;
+                color: #6b96a5;
+            }
+        
+            .nav-item.active a{
+                cursor: pointer;
+            }
+        }
+    }
+
+    
+}
