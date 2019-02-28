@@ -1,3 +1,48 @@
-.backwards{
-    background-image: url("img/bg-backwards.png");
+.backwards {
+    padding: 50px 17px;
+    color: #fff;
+    background-color: #141615;
+    background-repeat: no-repeat;
+    background-image: url("img/pottery-320-merged.png");
+        
+    input[type=text],
+    input[type=tel] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 10px 15px;
+        background-color: transparent;
+        font-size: 14px;
+        line-height: 24px;
+        color: #ffffff;
+        border: none;
+        border-bottom: 1px solid #fff;
+
+        &:focus {
+            background-color: rgba($color: #ffffff, $alpha: 0.2);
+            outline: none;
+        }
+    }
+
+    .question {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .headline {
+        font-size: 44px;
+        color: #ffffff;
+        text-align: start;
+    }
+
+    .btn-submit {
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 100%;
+        background-color: #fd4f10;
+    }
+
+    .agreement {
+        color: #bbbac0;
+        font-size: 12px;
+    }
 }
