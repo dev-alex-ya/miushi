@@ -1,3 +1,6 @@
+@import "header/header.scss";
+@import "main/main.scss";
+@import "footer/footer.scss";
 :root {
     --mi-green: #84c604;
     --mi-orange: #fd4f10;
@@ -48,6 +51,9 @@ body {
         margin: 0 auto;
         width: 780px;
     }
+    @import "header/header-tablet.scss";
+    @import "main/main-tablet.scss";
+    @import "footer/footer-tablet.scss";
 }
 
 @media (min-width: 1200px) {
@@ -55,4 +61,7 @@ body {
         margin: 0 auto;
         width: 1200px;
     }
+    @import "header/header-desktop.scss";
+    @import "main/main-desktop.scss";
+    @import "footer/footer-desktop.scss";
 }
