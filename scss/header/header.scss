@@ -13,7 +13,9 @@
 			}
 		}
 		
-		.menu {
+		.menu-visible {
+			display: flex;
+			justify-content: flex-end;
 			.nav-item {
 				padding: 8px;
 			}
@@ -21,8 +23,10 @@
 
 		.navbar-brand{
 			margin: 0;
-			padding: 0;	
-			// background-image: url("img/MiushiLogo.png");
+			padding: 0;
+			width: 46px;
+			height: 46px;
+			background-image: url("img/MiushiLogo.png");
 		}
 
 		.menu-list{
