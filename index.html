@@ -56,13 +56,28 @@
                     <div id="TopSlider" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/slide1.png" alt="First slide">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/slide1.png">
+                                    <source media="(max-width: 1199px)" srcset="img/slide1-tablet.png">
+                                    <source media="(min-width: 1200px)" srcset="img/slide1-desktop.png">
+                                    <img src="img/slide1.png" alt="First slide">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/slide2.jpg" alt="Second slide">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/slide2.png">
+                                    <source media="(max-width: 1199px)" srcset="img/slide2-tablet.png">
+                                    <source media="(min-width: 1200px)" srcset="img/slide2-desktop.png">
+                                    <img src="img/slide2.png" alt="Second slide">
+                                </picture>
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100" src="img/slide3.jpg" alt="Third slide">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="img/slide3.png">
+                                    <source media="(max-width: 1199px)" srcset="img/slide3-tablet.png">
+                                    <source media="(min-width: 1200px)" srcset="img/slide3-desktop.png">
+                                    <img src="img/slide3.jpg" alt="First slide">
+                                </picture>
                             </div>
                         </div>
                         <ol class="carousel-indicators">
