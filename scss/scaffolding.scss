@@ -14,9 +14,9 @@ body {
     background-color: #ffffff;
 }
 
-.container {
+.wrapper {
     margin: 0 auto;
-    width: 350px;
+    width: 320px;
 }
 
 .card {
@@ -47,20 +47,22 @@ body {
 }
 
 @media (min-width: 768px) {
-    .container {
-        margin: 0 auto;
-        width: 780px;
+    
+    .wrapper {
+        width: 720px;
     }
+    
     @import "header/header-tablet.scss";
     @import "main/main-tablet.scss";
     @import "footer/footer-tablet.scss";
 }
 
 @media (min-width: 1200px) {
-    .container {
-        margin: 0 auto;
+    
+    .wrapper {
         width: 1200px;
     }
+    
     @import "header/header-desktop.scss";
     @import "main/main-desktop.scss";
     @import "footer/footer-desktop.scss";

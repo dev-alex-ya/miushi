@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = " preconnect "  href = " https://fonts.gstatic.com/ "  crossorigin>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
     
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
@@ -22,7 +22,7 @@
 <body>
     <!-- HEADER -->
     <header class="header">
-        <div class="container">
+        <div class="container ">
             <div class="row navbar justify-content-between">
                 <div class="col-4">
                     <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNavbarCollapse" aria-controls="headerNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,46 +50,45 @@
     </header>
     <!-- MAIN -->
     <main class="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div id="TopSlider" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <picture>
-                                    <source media="(max-width: 768px)" srcset="img/slide1.png">
-                                    <source media="(max-width: 1199px)" srcset="img/slide1-tablet.png">
-                                    <source media="(min-width: 1200px)" srcset="img/slide1-desktop.png">
-                                    <img src="img/slide1.png" alt="First slide">
-                                </picture>
-                            </div>
-                            <div class="carousel-item">
-                                <picture>
-                                    <source media="(max-width: 768px)" srcset="img/slide2.png">
-                                    <source media="(max-width: 1199px)" srcset="img/slide2-tablet.png">
-                                    <source media="(min-width: 1200px)" srcset="img/slide2-desktop.png">
-                                    <img src="img/slide2.png" alt="Second slide">
-                                </picture>
-                            </div>
-                            <div class="carousel-item">
-                                <picture>
-                                    <source media="(max-width: 768px)" srcset="img/slide3.png">
-                                    <source media="(max-width: 1199px)" srcset="img/slide3-tablet.png">
-                                    <source media="(min-width: 1200px)" srcset="img/slide3-desktop.png">
-                                    <img src="img/slide3.jpg" alt="First slide">
-                                </picture>
-                            </div>
-                        </div>
-                        <ol class="carousel-indicators">
-                            <li data-target="#TopSlider" data-slide-to="0" class="active"></li>
-                            <li data-target="#TopSlider" data-slide-to="1"></li>
-                            <li data-target="#TopSlider" data-slide-to="2"></li>
-                        </ol>
+        <div class="wrapper">
+            <div id="TopSlider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="img/slide1.png">
+                            <source media="(max-width: 1169px)" srcset="img/slide1-tablet.png">
+                            <source media="(min-width: 1200px)" srcset="img/slide1-desktop.jpg">
+                            <img src="img/slide1.png" alt="First slide">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="img/slide2.png">
+                            <source media="(max-width: 1169px)" srcset="img/slide2-tablet.png">
+                            <source media="(min-width: 1200px)" srcset="img/slide2-desktop.png">
+                            <img src="img/slide2.png" alt="Second slide">
+                        </picture>
+                    </div>
+                    <div class="carousel-item">
+                        <picture>
+                            <source media="(max-width: 767px)" srcset="img/slide3.png">
+                            <source media="(max-width: 1169px)" srcset="img/slide3-tablet.png">
+                            <source media="(min-width: 1200px)" srcset="img/slide3-desktop.png">
+                            <img src="img/slide3.jpg" alt="First slide">
+                        </picture>
                     </div>
                 </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#TopSlider" data-slide-to="0" class="active"></li>
+                    <li data-target="#TopSlider" data-slide-to="1"></li>
+                    <li data-target="#TopSlider" data-slide-to="2"></li>
+                </ol>
             </div>
+        </div>
+        <div class="container">
+            
             <!-- СЕТЫ -->
-            <div class="sets">
+            <!-- <div class="sets">
                 <h2 class="headline headline-decorated">Сеты</h2>
                 <div class="row">
                     <div class="col-12">
@@ -177,10 +176,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- РОЛЛЫ -->
-            <div class="rolls">
+            <!-- <div class="rolls">
                 <h2 class="headline headline-decorated">Ролы</h2>
                 <div class="row">
                     <div class="col-12">
@@ -268,10 +267,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ПИЦЦЫ -->
-            <div class="pizza">
+            <!-- <div class="pizza">
                 <h2 class="headline headline-decorated">Пицца</h2>
                 <div class="row">
                     <div class="col-12">
@@ -359,10 +358,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- WOK -->
-            <div class="wok">
+            <!-- <div class="wok">
                 <h2 class="headline headline-decorated">WOK</h2>
                 <div class="row">
                     <div class="col-12">
@@ -442,10 +441,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- NEWS AND PROMOTIONS -->
-            <div class="news_promo">
+            <!-- <div class="news_promo">
                 <div class="row">
                     <div class="col-12">
                         <nav class="nav">
@@ -530,7 +529,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- 10 причин -->
             <div class="ten_reasons">
