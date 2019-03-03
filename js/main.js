@@ -1,8 +1,13 @@
 $(document).ready(function() {
 
+    $('.carousel').carousel({
+        interval: false
+    })
+
     $(".slider").slick({
 
         // normal options...
+        autoplay: false,
         slidesToShow: 4,
         infinite: true,
         focusOnSelect: true,
@@ -13,22 +18,37 @@ $(document).ready(function() {
         // the magic
         responsive: [
             {
+                
                 breakpoint: 320,
                 settings: {
+                    autoplay: false,
                     slidesToShow: 1,
-                    infinite: true
+                    infinite: true,
+                    focusOnSelect: true,
+                    centerMode: true,
+                    centerPadding: "35px",
+                    mobileFirst: true
                 }
             },
             {
-                breakpoint: 1200,
-                settings: {
-                    slidesToShow: 3,
-                    infinite: true
-                }
-            }, {
+                
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
+                    autoplay: false,
+                    slidesToShow: 2,
+                    infinite: true,
+                    focusOnSelect: true,
+                    centerMode: true,
+                    centerPadding: "35px",
+                    mobileFirst: true
+                }
+            },
+            {
+                
+                breakpoint: 1200,
+                settings: {
+                    autoplay: false,
+                    slidesToShow: 4,
                     infinite: true
                 }
             }
