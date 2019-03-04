@@ -4,6 +4,7 @@
 :root {
     --mi-green: #84c604;
     --mi-orange: #fd4f10;
+    --mi-red: #ba2529;
     --mi-open-sans: 'Open Sans', sans-serif !important;
 }
 
@@ -15,8 +16,7 @@ body {
 }
 
 .wrapper {
-    margin: 0 auto;
-    width: 320px;
+    width: 100%;
 }
 
 .card {
@@ -47,21 +47,12 @@ body {
 }
 
 @media (min-width: 768px) {
-    
-    .wrapper {
-        width: 720px;
-    }
-    
     @import "header/header-tablet.scss";
     @import "main/main-tablet.scss";
     @import "footer/footer-tablet.scss";
 }
 
 @media (min-width: 1200px) {
-    
-    .wrapper {
-        width: 1200px;
-    }
     
     @import "header/header-desktop.scss";
     @import "main/main-desktop.scss";
