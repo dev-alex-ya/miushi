@@ -1,0 +1,37 @@
+.header{
+    .navbar{
+        .menu {
+            flex-direction: row;
+        }
+
+        .hamburger{
+            display: none;
+        }
+
+        .navbar-brand {
+			
+        }
+        .menu-visible {
+
+        }
+        .popup-menu {
+            display: flex;
+            position: static;
+            flex-direction: column-reverse;
+
+            .menu-list {
+                display: flex;
+            }
+            
+            .contacts {
+                display: flex;
+                flex-direction: row-reverse;
+                // justify-content: space-between;
+
+                .phone-wrapper {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

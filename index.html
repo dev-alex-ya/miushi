@@ -23,27 +23,52 @@
     <!-- HEADER -->
     <header class="header">
         <div class="container ">
+            
             <div class="row navbar justify-content-between">
-                <div class="col-4">
-                    <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#headerNavbarCollapse" aria-controls="headerNavbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                <div class="col-xs-4 d-block d-xl-none">
+                    <div class="hamburger hamburger--spin js-hamburger" target="#popup-menu">
+                        <div class="hamburger-box">
+                            <div class="hamburger-inner"></div>
+                        </div>
+                    </div>
+                    <div class="overlay"></div>
                 </div>
-                <div class="col-4 d-flex justify-content-center">
-                    
+                <div class="col-xs-4 d-flex justify-content-center">
+                    <a class="navbar-brand " href="#">
+                        <picture>
+                            <source media="(max-width: 750px)" srcset="img/MiushiLogo.png">
+                            <source media="(min-width: 751px)" srcset="img/MiushiLogo-tablet.png">
+                            <img src="img/MiushiLogo.png" alt="Miushi Logo">
+                        </picture>
+                    </a>
                 </div>
-                <div class="col-4">
+                <div class="col-xs-4 menu">
                     <nav class="menu-visible">
                         <a class="nav-item nav-link" href="#"><img src="img/user.png" alt=""></a>
                         <a class="nav-item nav-link" href="#"><img src="img/cart.png" alt=""></a>
                     </nav>
-                    <ul class="collapse navbar-collapse menu-list" id="headerNavbarCollapse">
-                        <li class="nav-item"><a href="#" class="nav-link">Меню</a></li>
-                        <li class="nav-item active"><a href="#" class="nav-link">Акции и скидки</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Доставка и оплата</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
-                    </ul>
+                    <div class="popup-menu" id="popup-menu">
+                        <ul class="menu-list">
+                            <li class="d-flex justify-content-end"><button id="closeMenu" class=" btn btn-close"></button></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Меню</a></li>
+                            <li class="nav-item active"><a href="#" class="nav-link">Акции и скидки</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Доставка и оплата</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                        </ul>
+                        <div class="contacts">
+                            <div class="phone-wrapper">
+                                <div class="phone">
+                                    <div class="tel">+7 (800) 333 2 222</div>
+                                    <div class="working-hours">Работаем с 11.00 до 23.00</div>
+                                </div>
+                                <button class="btn btn-callback">Обратный звонок</button>
+                            </div>
+                            
+                            <div class="address">г.Курск, ул.Ленина, д.3</div>
+                            <div class="email">78003332222@yandex.ru</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

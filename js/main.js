@@ -90,5 +90,47 @@ $(document).ready(function() {
             icons: icons
         }
     );
+
+    //hamburger start
+    let trigger = $('.hamburger');
+    let target = $( trigger.attr("target") );
+    let btnClose = $('#closeMenu');
+    // btnClose.html('');
+    let overlay = $('.overlay');
+    let isClosed = false;
+
+    trigger.click(function () {
+        hamburgerCross();
+    });
+
+    btnClose.click(function() {
+        hamburgerCross();
+    });
+
+    function hamburgerCross() {
+
+        if (isClosed == true) {
+            overlay.hide();
+            trigger.removeClass('is-open');
+            trigger.addClass('is-closed');
+            target.hide();
+            isClosed = false;
+        } else {
+            overlay.show();
+            trigger.removeClass('is-closed');
+            trigger.addClass('is-open');
+            target.show();
+            isClosed = true;
+        }
+    }
+
+    function openMenu () {
+
+    }
+
+    $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+    });
+    //hamburger end
     
 });
