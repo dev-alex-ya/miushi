@@ -1,35 +1,122 @@
 .header{
-    .navbar{
-        .menu {
-            flex-direction: row;
-        }
 
-        .hamburger{
-            display: none;
-        }
+    .mobile-menu {
+        display: none;
+    }
 
-        .navbar-brand {
-			
-        }
-        .menu-visible {
+    .desktop-menu {
+        display: flex;
+        // border: 2px dotted black;
 
-        }
-        .popup-menu {
+        .top{
+            box-sizing: border-box;
+            // border: 2px dotted red;
             display: flex;
-            position: static;
-            flex-direction: column-reverse;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
 
-            .menu-list {
-                display: flex;
+            .navbar-brand{
+                justify-self: flex-start;
+                margin-right: auto;
             }
-            
-            .contacts {
-                display: flex;
-                flex-direction: row-reverse;
-                // justify-content: space-between;
 
-                .phone-wrapper {
+            
+
+            .email{
+                &::before{
+                    
+                    bottom: 2px;
+                    left: -1px;
+                }
+            }
+
+            .address{
+                margin: 0;
+                margin-left: 150px;
+            }
+
+            .phone{
+                // border: 2px dashed blue;
+                margin-left: 75px;
+            }
+            .btn-callback{
+                // border: 2px dashed blue;
+                margin-left: 30px;
+            }
+        }
+
+        .bottom{
+            .navbar{
+            //     display: flex;
+            //     flex-direction: row;
+            //     justify-content: space-between;
+                .navbar-nav{
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .nav-item{
+                        .dropdown-toggle{
+                            outline:none;
+                            font-size: 16px;
+                            font-weight: 600;
+                            color: #000000;
+                            text-transform: uppercase;
+                            border-radius: 0;   
+                        }
+                        &:hover .dropdown-toggle{
+                            color: #ffffff;
+                            background-color: var(--mi-green);
+                        }
+                    } 
+    
+                    .dropdown-menu{
+                        position: absolute;
+
+                        .dropdown-item:hover{
+                            color: #ffffff;
+                            background-color: var(--mi-green);
+                        }
+                    }
+                }
+                .private-btn{
                     display: flex;
+
+                    .nav-link{
+                        position: relative;
+                        padding-left: 22px;
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            width: 22px;
+                            height: 22px;
+                            left: -11px;
+                            background-repeat: no-repeat;
+                            background-position: center center;
+                            
+                            
+                        }
+                    }
+
+                    .cabinet {
+                        a::before{
+                            background-image: url("img/user.png");
+                            
+                        }
+                        &:hover  .nav-link::before{
+                            background-image: url("img/user-hover.png");
+                        }
+                    }
+
+                    .checkout {
+                        a::before{
+                            background-image: url("img/cart.png");
+                        }
+                        &:hover  .nav-link::before{
+                            background-image: url("img/cart-hover.png");
+                        }
+                    }
                 }
             }
         }
