@@ -110,6 +110,20 @@
                     }
 
                     .cart {
+                        .count{
+                            display: block;
+                            position: absolute;
+                            background-color: red;
+                            left: 0;
+                            top: 3px;
+                            font-size: 8px;
+                            color: #ffffff;
+                            width: 11px;
+                            height: 11px;
+                            border-radius: 2px;
+                            text-align: center;
+
+                        }
                         a::before{
                             background-image: url("img/cart.png");
                         }
