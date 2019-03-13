@@ -123,7 +123,7 @@ $(document).ready(function() {
             isClosed = true;
         }
     }
-
+ 
     function openMenu () {
 
     }

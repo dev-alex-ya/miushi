@@ -110,6 +110,13 @@
                     }
 
                     .cart {
+
+                        // &::after{
+                        //     position: absolute;
+                        //     width: 11px;
+                        //     height: 11px;
+                        //     content: "Корзина";
+                        // }
                         .count{
                             display: block;
                             position: absolute;

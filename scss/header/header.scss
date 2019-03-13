@@ -194,4 +194,31 @@
 			cursor: pointer;
 		}
 	}
+
+	.cart {
+		position: relative;
+		display: block;
+		background-repeat: no-repeat;
+		
+        .count{
+            display: block;
+            position: absolute;
+            // position: relative;
+            background-color: red;
+            left: 17px;
+            top: -2px;
+            font-size: 8px;
+            color: #ffffff;
+            width: 11px;
+            height: 11px;
+            border-radius: 2px;
+            text-align: center;
+
+        }
+        
+        &:hover{
+            background-image: url("img/cart-hover.png");
+        }
+        
+    }
 }
