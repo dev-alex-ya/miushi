@@ -5,52 +5,60 @@ $(document).ready(function() {
     })
 
     $(".slider").slick({
-
-        // normal options...
-        autoplay: false,
-        slidesToShow: 4,
+        mobileFirst: true,       
         infinite: true,
-        focusOnSelect: true,
-        centerMode: true,
-        centerPadding: "35px",
-        mobileFirst: true,
-
-        // the magic
+        // edgeFriction: 0,
         responsive: [
             {
-                
-                breakpoint: 320,
-                settings: {
-                    autoplay: false,
-                    slidesToShow: 1,
-                    infinite: true,
-                    focusOnSelect: true,
-                    centerMode: true,
-                    centerPadding: "35px",
-                    mobileFirst: true
-                }
+              breakpoint: 320,
+              settings: {
+                centerMode: true,
+                centerPadding: '20px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false
+              }
             },
             {
-                
-                breakpoint: 768,
-                settings: {
-                    autoplay: false,
-                    slidesToShow: 2,
-                    infinite: true,
-                    focusOnSelect: true,
-                    centerMode: true,
-                    centerPadding: "35px",
-                    mobileFirst: true
-                }
+              breakpoint: 576,
+              settings: {
+                centerMode: true,
+                centerPadding: '20px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: false
+              }
             },
             {
-                
-                breakpoint: 1200,
-                settings: {
-                    autoplay: false,
-                    slidesToShow: 4,
-                    infinite: true
-                }
+              breakpoint: 768,
+              settings: {
+                centerMode: true,
+                centerPadding: '20px',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 992,
+              settings: {
+                centerMode: true,
+                centerPadding: '63px',
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 1070,
+              settings: {
+                // centerMode: true,
+                // centerPadding: '10px',
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                dots: true
+              }
             }
             
         ]
