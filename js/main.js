@@ -7,7 +7,6 @@ $(document).ready(function() {
     $(".slider").slick({
         mobileFirst: true,       
         infinite: true,
-        // edgeFriction: 0,
         responsive: [
             {
               breakpoint: 320,
@@ -26,17 +25,13 @@ $(document).ready(function() {
                 centerPadding: '20px',
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                dots: false
+                dots: true
               }
             },
             {
               breakpoint: 768,
               settings: {
-                centerMode: true,
-                centerPadding: '20px',
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                dots: true
+                dots: false
               }
             },
             {
@@ -46,7 +41,7 @@ $(document).ready(function() {
                 centerPadding: '63px',
                 slidesToShow: 2,
                 slidesToScroll: 2,
-                dots: true
+                dots: false
               }
             },
             {
