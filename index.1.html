@@ -5,12 +5,14 @@
     <title>Miushi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel = " preconnect "  href = " https://fonts.gstatic.com/ "  crossorigin>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i&amp;subset=cyrillic">
     <link rel="stylesheet" href="node_modules/jquery.nice-number/dist/jquery.nice-number.min.css">
+    <link rel="stylesheet" href="node_modules/swiper/dist/css/swiper.css">
     <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="myslider.css"> -->
 </head>
 <body>
     <!-- MAIN -->
@@ -21,14 +23,142 @@
                 <h2 class="headline headline-decorated">Пицца</h2>
                 <div class="row">
                     <div class="col-12" style="border: 1px solid red;">
-                        <ul class="slider" style="border: 1px solid blue;">
-                            <li style="border: 1px solid red;"><img src="img/wok_1.png" alt="wok_1"></li>
-                            <li style="border: 1px solid red;"><img src="img/wok_2.png" alt="wok_2"></li>
-                            <li style="border: 1px solid red;"><img src="img/wok_3.png" alt="wok_3"></li>
-                            <li style="border: 1px solid red;"><img src="img/wok_4.png" alt="wok_4"></li>
-                            <li style="border: 1px solid red;"><img src="img/wok_1.png" alt="wok_5"></li>
-                            <li style="border: 1px solid red;"><img src="img/wok_2.png" alt="wok_6"></li>
-                        </ul>
+                        
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img class="img" src="img/pizza_bawar.png" alt="pizza_bawar">
+                                    <h2 class="title">Баварская</h2>
+                                    <div class="info">
+                                        <span class="inStock">33 см</span>
+                                        <span>|</span>
+                                        <span class="mass">680 г.</span>
+                                        <span>|</span>
+                                        <span class="calorie">1350 Kkal</span>
+                                        <div class="price-wraper">
+                                            <span class="price">480 
+                                                <span class="currency">руб.</span>
+                                            </span>
+                                            <input type="number" min="1" value="1" style="width: 4ch;">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-buy">В корзину
+                                        <img class="bascket" src="img/bascket.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img" src="img/pizza_vegan.png" alt="pizza_vegan">
+                                    <h2 class="title">Вегетарианская</h2>
+                                    <div class="info">
+                                        <span class="inStock">33 см</span>
+                                        <span>|</span>
+                                        <span class="mass">755 г.</span>
+                                        <span>|</span>
+                                        <span class="calorie">1800 Kkal</span>
+                                        <div class="price-wraper">
+                                            <span class="price">380 
+                                                <span class="currency">руб.</span>
+                                            </span>
+                                            <input type="number" min="1" value="1" style="width: 4ch;">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-buy">В корзину
+                                        <img class="bascket" src="img/bascket.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img" src="img/pizza_pepperony.png" alt="pizza_pepperony">
+                                    <h2 class="title">Пепперони</h2>
+                                    <div class="info">
+                                        <span class="inStock">33 см</span>
+                                        <span>|</span>
+                                        <span class="mass">615 г.</span>
+                                        <span>|</span>
+                                        <span class="calorie">1400 Kkal</span>
+                                        <div class="price-wraper">
+                                            <span class="price">450 
+                                                <span class="currency">руб.</span>
+                                            </span>
+                                            <input type="number" min="1" value="1" style="width: 4ch;">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-buy">В корзину
+                                        <img class="bascket" src="img/bascket.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img" src="img/pizza_classic.png" alt="pizza_classic">
+                                    <h2 class="title">Классическая</h2>
+                                    <div class="info">
+                                        <span class="inStock">33 см</span>
+                                        <span>|</span>
+                                        <span class="mass">590 г.</span>
+                                        <span>|</span>
+                                        <span class="calorie">1490 Kkal</span>
+                                        <div class="price-wraper">
+                                            <span class="price">390 
+                                                <span class="currency">руб.</span>
+                                            </span>
+                                            <input type="number" min="1" value="1" style="width: 4ch;">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-buy">В корзину
+                                        <img class="bascket" src="img/bascket.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img" src="img/pizza_bawar.png" alt="pizza_bawar">
+                                    <h2 class="title">Итальяно</h2>
+                                    <div class="info">
+                                        <span class="inStock">33 см</span>
+                                        <span>|</span>
+                                        <span class="mass">680 г.</span>
+                                        <span>|</span>
+                                        <span class="calorie">1350 Kkal</span>
+                                        <div class="price-wraper">
+                                            <span class="price">480 
+                                                <span class="currency">руб.</span>
+                                            </span>
+                                            <input type="number" min="1" value="1" style="width: 4ch;">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-buy">В корзину
+                                        <img class="bascket" src="img/bascket.png" alt="">
+                                    </button>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="img" src="img/pizza_vegan.png" alt="pizza_vegan">
+                                    <h2 class="title">Мексиканская</h2>
+                                    <div class="info">
+                                        <span class="inStock">33 см</span>
+                                        <span>|</span>
+                                        <span class="mass">755 г.</span>
+                                        <span>|</span>
+                                        <span class="calorie">1800 Kkal</span>
+                                        <div class="price-wraper">
+                                            <span class="price">380 
+                                                <span class="currency">руб.</span>
+                                            </span>
+                                            <input type="number" min="1" value="1" style="width: 4ch;">
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-buy">В корзину
+                                        <img class="bascket" src="img/bascket.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -36,17 +166,15 @@
             
 
     <!-- SCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <!-- plugins -->
+    <script src="js/jquery.js"></script>
+    <!-- <script src="node_modules/jquery-ui/external/requirejs/require.js"></script> -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- <script src="node_modules/popper.js/dist/popper.js"></script> -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     <script src="node_modules/jquery.nice-number/dist/jquery.nice-number.min.js"></script>
     <script type="text/javascript" src="js/show-more-items.js"></script>
     <script type="text/javascript" src="js/Collapse-Long-Content-View-More-jQuery/jquery.show-more.js"></script>
+    <script src="node_modules/swiper/dist/js/swiper.js"></script>
     <script src="js/main.js"></script>
 </body>
 
