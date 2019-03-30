@@ -46,14 +46,38 @@ body {
     }
 }
 
+.customContainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .customContainer {
+        width: 540px;
+    }
+}
+
 @media (min-width: 768px) {
+    .customContainer {
+        width: 720px;
+    }
+
     @import "header/header-tablet.scss";
     @import "main/main-tablet.scss";
     @import "footer/footer-tablet.scss";
 }
 
+@media (min-width: 992px) {
+    .customContainer {
+        width: 960px;
+    }
+}
+
 @media (min-width: 1170px) {
-    
+    .customContainer {
+        width: 1140px;
+    }
+
     @import "header/header-desktop.scss";
     @import "main/main-desktop.scss";
     @import "footer/footer-desktop.scss";

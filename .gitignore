@@ -1,4 +1,6 @@
 maps/
 .idea/
+.project
+.settings
 node_modules/
 main.css
