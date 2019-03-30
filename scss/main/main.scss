@@ -27,14 +27,14 @@
         }
     }
     
-    .slick-slide {
-        width: 220px !important;
-        margin: 0 15px;
-    }
-    .slick-track {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
+    // .slick-slide {
+    //     width: 220px !important;
+    //     margin: 0 15px;
+    // }
+    // .slick-track {
+    //     padding-top: 25px;
+    //     padding-bottom: 25px;
+    // }
     .sets {
         margin-top: 3rem;
     }
@@ -46,5 +46,6 @@
     @import "feedbacks.scss";
     @import "backwards.scss";
     @import "about.scss";
-    @import "swiper.scss"
+    @import "swiper.scss";
+    @import "label-new.scss";
 }

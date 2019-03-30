@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Roboto Slab Bold';
+    src: local("Roboto Slab Bold"),
+	local("RobotoSlab-Bold"),
+	url('RobotoSlab-Bold.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
