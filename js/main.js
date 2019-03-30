@@ -182,12 +182,22 @@ $(document).ready(function() {
         //   spaceBetween: 30,
         // },
         575: {
-          slidesPerView: 1.3,
+          slidesPerView: 2.3,
+          centeredSlides: true,
+          spaceBetween: 30,
+        },
+        520: {
+          slidesPerView: 2,
+          centeredSlides: true,
+          spaceBetween: 30,
+        },
+        435: {
+          slidesPerView: 1.35,
           centeredSlides: true,
           spaceBetween: 30,
         },
         320: {
-          slidesPerView: 1,
+          slidesPerView: 1.2,
           centeredSlides: true,
           spaceBetween: 30,
         }
