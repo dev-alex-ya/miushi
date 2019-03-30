@@ -12,9 +12,9 @@ $(document).ready(function() {
               breakpoint: 320,
               settings: {
                 centerMode: true,
-                centerPadding: '20px',
-                slidesToShow: 1,
-                slidesToScroll: 1,
+                centerPadding: '30px',
+                // slidesToShow: 1,
+                // slidesToScroll: 1,
                 dots: false
               }
             },
@@ -89,10 +89,10 @@ $(document).ready(function() {
         header: "iconClosed",    // custom icon class
         activeHeader: "iconOpen" // custom icon class
     };
-    $( "#accordion" ).accordion({
-            icons: icons
-        }
-    );
+    // $( "#accordion" ).accordion({
+    //         icons: icons
+    //     }
+    // );
 
     //hamburger start
     let trigger = $('.hamburger');
@@ -136,4 +136,72 @@ $(document).ready(function() {
     });
     //hamburger end
     
+
+
+
+    var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      // direction: 'vertical',
+      loop: false,
+  
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+      slidesPerView: 4,
+      spaceBetween: 40,
+  
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: "true",
+      },
+      breakpoints: {
+        1169: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        992: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        767: {
+          slidesPerView: 2.3,
+          centeredSlides: true,
+          spaceBetween: 30,
+        },
+        // 767: {
+        //   slidesPerView: 2,
+        //   centeredSlides: true,
+        //   spaceBetween: 30,
+        // },
+        575: {
+          slidesPerView: 2.3,
+          centeredSlides: true,
+          spaceBetween: 30,
+        },
+        520: {
+          slidesPerView: 2,
+          centeredSlides: true,
+          spaceBetween: 30,
+        },
+        435: {
+          slidesPerView: 1.35,
+          centeredSlides: true,
+          spaceBetween: 30,
+        },
+        320: {
+          slidesPerView: 1.2,
+          centeredSlides: true,
+          spaceBetween: 30,
+        }
+      }
+    });
 });

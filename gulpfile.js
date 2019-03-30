@@ -30,5 +30,5 @@ gulp.task("serve", ["sass"], function(){
         ui: false
     });
     gulp.watch("scss/**/*.scss", ["sass"]);
-    gulp.watch(["index.html", "main.css", "js/main.js"], server.reload);
+    gulp.watch(["index.html", "index.1.html", "myslider.css", "main.css", "js/main.js"], server.reload);
 });
