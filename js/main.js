@@ -145,9 +145,10 @@ $(document).ready(function() {
       loop: false,
   
       // If we need pagination
-      // pagination: {
-      //   el: '.swiper-pagination',
-      // },
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
       slidesPerView: 4,
       spaceBetween: 40,
   
