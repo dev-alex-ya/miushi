@@ -1,0 +1,23 @@
+.fire {
+    overflow: hidden;
+    position: relative;
+}
+
+.fire::before {
+    position: absolute;
+    content: "";
+    z-index: 6;
+    display: flex;
+    right: 15px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f65b49;
+    // background-image: linear-gradient(#f65b49, #d54435);
+    // background-image: url("img/fire.png");
+    background-image: url("img/fire.png"), linear-gradient(#f65b49, #d54435);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.48);
+}
