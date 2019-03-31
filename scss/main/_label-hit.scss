@@ -1,0 +1,26 @@
+.hit {
+    overflow: hidden;
+    position: relative;
+}
+
+.hit::before {
+    position: absolute;
+    z-index: 6;
+    display: flex;
+    right: 15px;
+    top: 15px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    content: "хит";
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Roboto Slab Bold', serif;
+    font-size: 16px;
+    // font-weight: 400;
+    text-align: center;
+    background-color: #c04b3d;
+    background-image: linear-gradient(#f65b49, #d54435);
+    box-shadow: 0px 3px 9px 0px rgba(0,0,0,0.48);
+}
