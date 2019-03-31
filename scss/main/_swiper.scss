@@ -149,6 +149,21 @@
     
 }
 
+.swiper-pagination {
+    .swiper-pagination-bullet {
+        background-color: #b3b3b3;
+        opacity: 1;
+
+        &.swiper-pagination-bullet-active {
+            background-color: #67b437;
+        }
+    }
+}
+
+.swiper-scrollbar {
+    display: none;
+}
+
 @media (max-width: 1170px) {
     .swiper-slide .img {
         // height: 215px;
