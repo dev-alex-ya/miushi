@@ -143,7 +143,7 @@ $(document).ready(function() {
       // Optional parameters
       // direction: 'vertical',
       loop: false,
-  
+      watchOverflow: false,
       // If we need pagination
       pagination: {
         el: '.swiper-pagination',
