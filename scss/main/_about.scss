@@ -2,10 +2,19 @@
     font-size: 14px;
     padding: 30px 15px 70px 15px;
 
+    .img {
+        display: none;
+    }
+
+    // .showmore-1 {
+    //     width: 100%;
+    // }
+
     .h3{
         font-size: 20px !important;
         font-family: var(--mi-open-sans);
         font-weight: 800 !important;
+        margin-bottom: 50px;
     }
 
     .showmore-button {
@@ -24,5 +33,20 @@
         margin-top: 5px;
         border-radius: 4px;
         border: 1px solid #fd4f10;
+    }
+
+    
+
+    @media (min-width: 568px) {
+        .img {
+            display: block;
+            float: right;
+            margin-left: 30px;
+        }
+    }
+    @media (min-width: 992px) {
+        .img {
+            margin-left: 60px;
+        }
     }
 }
