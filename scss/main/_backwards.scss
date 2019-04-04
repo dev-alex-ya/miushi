@@ -1,21 +1,27 @@
 .backwards {
     padding: 50px 17px;
     color: #fff;
-    background-color: #141615;
     background-repeat: no-repeat;
     background-image: url("img/pottery-320-merged.png");
+    background-color: rgb(28, 1, 41);
+    background-position: center;
         
     input[type=text],
     input[type=tel] {
         width: 100%;
         margin-bottom: 20px;
-        padding: 10px 15px;
+        padding: 10px 10px;
         background-color: transparent;
         font-size: 14px;
         line-height: 24px;
         color: #ffffff;
+        // color: #000;
         border: none;
         border-bottom: 1px solid #fff;
+
+        &::placeholder {
+            color: #fff;
+        }
 
         &:focus {
             background-color: rgba($color: #ffffff, $alpha: 0.2);
@@ -34,15 +40,72 @@
         text-align: start;
     }
 
-    .btn-submit {
-        margin-top: 40px;
-        margin-bottom: 20px;
-        width: 100%;
-        background-color: #fd4f10;
+    .form-back{
+        .btn-submit {
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            width: 100%;
+            height: 50px;
+            background-color: #fd4f10;
+        }
     }
 
     .agreement {
         color: #bbbac0;
         font-size: 12px;
     }
+    
+    @media (min-width: 768px){
+        background:
+            url("img/pottery-3227903_1920.png"),
+            rgba(24, 3, 36, 0.842);
+        background-repeat: no-repeat;
+        background-position: 0;
+
+        .headline {
+            font-size: 54px;
+            line-height: 30px;
+            color: #ffffff;
+            text-align: start;
+        }
+    }
+
+	@media (min-width: 768px) {
+		.form-back {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            input {
+                margin: 0 15px;
+                height: 38px;
+
+                &:first-child {
+                    margin-left: 7px;
+                }
+
+                &:last-child {
+                    margin-right: 7px;
+                }
+            }
+
+            .btn-submit {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+	}
+	
+	@media (min-width: 1170px) {
+		.form-back {
+            input {
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+	}
 }
