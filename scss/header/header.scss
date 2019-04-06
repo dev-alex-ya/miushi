@@ -45,14 +45,6 @@
 			}
 		}
 
-		.navbar-brand {
-			// margin: 0;
-			// padding: 0;
-			// width: 46px;
-			// height: 46px;
-			// background-image: url("img/MiushiLogo.png");
-		}
-
 		.popup-menu {
 			display: none;
 			
@@ -199,6 +191,17 @@
 		position: relative;
 		display: block;
 		background-repeat: no-repeat;
+		background-image: url("img/cart.png");
+		width: 22px !important;
+		height: 22px !important;
+
+		&::before{
+			background-image: url("img/cart.png");
+		}
+
+        &:hover{
+            background-image: url("img/cart-hover.png");
+        }
 		
         .count{
             display: block;
@@ -215,10 +218,5 @@
             text-align: center;
 
         }
-        
-        &:hover{
-            background-image: url("img/cart-hover.png");
-        }
-        
     }
 }

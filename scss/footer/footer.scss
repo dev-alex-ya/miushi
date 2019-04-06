@@ -9,6 +9,7 @@
         align-items: center;
         .copyright {
             margin-bottom: 35px;
+            font-size: 12px;
             p {
                 margin-bottom: 0;
             }
@@ -32,5 +33,9 @@
                 padding: 5px 3px;
             }
         }
+    }
+
+    .desktop_menu {
+        display: none;
     }
 }

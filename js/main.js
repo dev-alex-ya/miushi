@@ -89,10 +89,10 @@ $(document).ready(function() {
         header: "iconClosed",    // custom icon class
         activeHeader: "iconOpen" // custom icon class
     };
-    // $( "#accordion" ).accordion({
-    //         icons: icons
-    //     }
-    // );
+    $( "#accordion" ).accordion({
+            icons: icons
+        }
+    );
 
     //hamburger start
     let trigger = $('.hamburger');
