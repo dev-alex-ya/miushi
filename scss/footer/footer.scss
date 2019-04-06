@@ -7,6 +7,12 @@
     .row {
         flex-direction: column-reverse;
         align-items: center;
+
+        .right-col {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
         .copyright {
             margin-bottom: 35px;
             font-size: 12px;
@@ -30,12 +36,15 @@
             margin-bottom: 35px;
 
             .nav-link {
-                padding: 5px 3px;
+                padding: 5px 7.5px;
             }
         }
     }
 
-    .desktop_menu {
+    .desktop_menu,
+    .desktop-copyright {
         display: none;
     }
+
+    
 }

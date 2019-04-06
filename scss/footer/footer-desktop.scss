@@ -1,17 +1,19 @@
 .footer {
-    
+    .desktop-off {
+        display: none !important;
+    }
+
     .container{
         .accordion{
             display: none;
         }
 
         .desktop_menu {
+            padding-top: 70px;
             display: flex;
             justify-content: space-between;
 
             .base-menu {
-                
-
                 h3 {
                     display: none;
                 }
@@ -61,15 +63,18 @@
 
         .row {
             height: 100px;
+            //
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            
-    
-            .row-item {
-                margin: 0;
-            }
         }
     }
-    
+
+    .desktop-copyright {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }    
 }
