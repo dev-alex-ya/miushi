@@ -110,33 +110,34 @@
                     }
 
                     .cart {
+                        padding-right: 0;
 
-                        // &::after{
-                        //     position: absolute;
-                        //     width: 11px;
-                        //     height: 11px;
-                        //     content: "Корзина";
-                        // }
-                        .count{
-                            display: block;
-                            position: absolute;
-                            background-color: red;
-                            left: 0;
-                            top: 3px;
-                            font-size: 8px;
-                            color: #ffffff;
-                            width: 11px;
-                            height: 11px;
-                            border-radius: 2px;
-                            text-align: center;
-
-                        }
-                        a::before{
+                        .nav-link {
+                            padding-left: 45px;
+                            padding-right: 0;
+                            position: relative;
                             background-image: url("img/cart.png");
+                            background-repeat: no-repeat;
+                            background-position: 10px 7px;
+
+                            &:hover {
+                                background-image: url("img/cart-hover.png");
+                            }
+
+                            .count {
+                                position: absolute;
+                                top: 0;
+                                left: 25px;
+                                font-size: 7px;
+                                font-weight: 900;
+                                color: #ffffff;
+                                background-color: #fd4f10;
+                                padding: 2px;
+                                border-radius: 3px;
+                            }
                         }
-                        &:hover  .nav-link::before{
-                            background-image: url("img/cart-hover.png");
-                        }
+                       
+                        
                     }
                 }
             }
