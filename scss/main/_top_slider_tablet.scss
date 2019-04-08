@@ -1,18 +1,55 @@
-.carousel {
-    margin-bottom: 40px;
-    
+@media (min-width: 768px) {
+    .carousel {
+        margin-bottom: 40px;
 
-	picture {
-		width: 765px;
-        height: 420px;
-        background-color: white;
-    }
+        .carousel-caption {
+            width: 235px; 
+            top: 5px;
+            left: 15px;
 
-    .carousel-indicators {
-        bottom: 17px !important;
-        li:not(.active) {
-            background-color: transparent;
+            h5 {
+                font-size: 72px;
+            }
+
+            p {
+                display: block;
+            }
+
+            .label {
+                top: 65px;
+                left: 420px;
+                padding: 15px;
+                padding-top: 20px;
+                width: 90px;
+                height: 90px;
+                font-size: 18px;
+            }
+
+            .btn-more {
+                // display: inline-block;
+                width: auto;
+                margin-top: 30px;
+                padding: 15px 45px;
+                vertical-align: middle;
+                text-transform: uppercase;
+                font-size: 16px;
+                line-height: auto;
+                background-color: #fd4f10;
+
+                &:hover {
+                    color: white;
+                    background-color: rgba($color: #fd4f10, $alpha: 0.95);
+                }
+            }
         }
-        
+
+        .carousel-indicators {
+            //отрегулировать высоту индикаторов
+            bottom: 20px;
+
+            li {
+                background-color: rgba($color: #000000, $alpha: 0.0)
+            }
+        }
     }
 }

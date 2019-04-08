@@ -1,12 +1,52 @@
-.carousel {
-	margin-bottom: 40px;
+@media (min-width: 1170px) {
+    .carousel {
+        margin-bottom: 40px;
 
-	picture {
-		width: 1920px;
-		height: 675px;
-    }
+        .carousel-caption {
+            width: 400px;
+            top: 5px;
+            left: 15px;
 
-    .carousel-indicators {
-        bottom: 50px !important;
+            h5 {
+                font-size: 110px;
+            }
+
+            p {
+                margin-top: 45px
+                font-size: 26px;
+                font-family: var(--mi-open-sans-italic);
+            }
+
+            .label {
+                top: 65px;
+                left: 600px;
+                width: 140px;
+                height: 140px;
+                font-size: 28px;
+                padding-top: 30px;
+            }
+
+            .btn-more {
+                // display: inline-block;
+                width: auto;
+                margin-top: 30px;
+                padding: 15px 45px;
+                vertical-align: middle;
+                text-transform: uppercase;
+                font-size: 16px;
+                line-height: auto;
+                background-color: #fd4f10;
+
+                &:hover {
+                    color: white;
+                    background-color: rgba($color: #fd4f10, $alpha: 0.95);
+                }
+            }
+        }
+
+        .carousel-indicators {
+            //отрегулировать высоту индикаторов
+            bottom: 50px;
+        }
     }
 }

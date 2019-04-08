@@ -51,4 +51,10 @@
     @import "label-hit.scss";
     @import "label-fire.scss";
     @import "label-veg.scss";
+
+    @import "_top_slider_tablet.scss";
+    @import "_card-tablet.scss";
+
+    @import "_top_slider_desktop.scss";
+    @import "_card-desktop.scss";
 }

@@ -5,7 +5,8 @@
     --mi-green: #84c604;
     --mi-orange: #fd4f10;
     --mi-red: #ba2529;
-    --mi-open-sans: 'Open Sans', sans-serif !important;
+    --mi-open-sans: 'OpenSans Regular', sans-serif !important;
+    --mi-open-sans-italic: 'OpenSans Italic', sans-serif;
 }
 
 body {
@@ -63,7 +64,7 @@ body {
     }
 
     @import "header/header-tablet.scss";
-    @import "main/main-tablet.scss";
+    // @import "main/main-tablet.scss";
     @import "footer/footer-tablet.scss";
 }
 
@@ -79,6 +80,6 @@ body {
     }
 
     @import "header/header-desktop.scss";
-    @import "main/main-desktop.scss";
+    // @import "main/main-desktop.scss";
     @import "footer/footer-desktop.scss";
 }
