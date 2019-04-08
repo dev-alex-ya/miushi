@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'OpenSans Regular';
+    src: local("OpenSans Regular"),
+	local("OpenSans-Regular"),
+	url('OpenSans-Regular.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans Italic';
+    src: local("OpenSans Italic"),
+	local("OpenSans-Italic"),
+	url('OpenSans-Italic.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
