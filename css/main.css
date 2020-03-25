@@ -5473,7 +5473,7 @@ a.text-dark:hover, a.text-dark:focus {
     left: -1px;
     width: 16px;
     height: 16px;
-    background-image: url("img/maps-and-flags.png");
+    background-image: url("../img/maps-and-flags.png");
     background-repeat: no-repeat;
     background-position: center center; }
 
@@ -5489,7 +5489,7 @@ a.text-dark:hover, a.text-dark:focus {
     left: -1px;
     width: 16px;
     height: 16px;
-    background-image: url("img/envelope.png");
+    background-image: url("../img/envelope.png");
     background-repeat: no-repeat;
     background-position: center center; }
 
@@ -5509,13 +5509,13 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   display: block;
   background-repeat: no-repeat;
-  background-image: url("img/cart.png");
+  background-image: url("../img/cart.png");
   width: 22px !important;
   height: 22px !important; }
   .header .mobile-menu .cart::before {
-    background-image: url("img/cart.png"); }
+    background-image: url("../img/cart.png"); }
   .header .mobile-menu .cart:hover {
-    background-image: url("img/cart-hover.png"); }
+    background-image: url("../img/cart-hover.png"); }
   .header .mobile-menu .cart .count {
     display: block;
     position: absolute;
@@ -5545,11 +5545,11 @@ a.text-dark:hover, a.text-dark:focus {
   .main .headline-decorated::before {
     position: relative;
     right: 2rem;
-    content: url("/img/title-left.png"); }
+    content: url("../img/title-left.png"); }
   .main .headline-decorated::after {
     position: relative;
     left: 2rem;
-    content: url("/img/title-right.png"); }
+    content: url("../img/title-right.png"); }
   .main .sets {
     margin-top: 3rem; }
   .main .carousel {
@@ -5682,7 +5682,7 @@ a.text-dark:hover, a.text-dark:focus {
   .main .news_promo {
     padding-top: 35px;
     padding-bottom: 40px;
-    background-image: url("img/bg_promo.png");
+    background-image: url("../img/bg_promo.png");
     background-repeat: repeat;
     background-color: #ffffff; }
     .main .news_promo .nav .nav-link {
@@ -5815,7 +5815,7 @@ a.text-dark:hover, a.text-dark:focus {
     padding: 50px 17px;
     color: #fff;
     background-repeat: no-repeat;
-    background-image: url("img/pottery-320-merged.png");
+    background-image: url("../img/pottery-320-merged.png");
     background-color: #1c0129;
     background-position: center; }
     .main .backwards input[type=text],
@@ -5865,7 +5865,7 @@ a.text-dark:hover, a.text-dark:focus {
       font-size: 12px; }
     @media (min-width: 768px) {
       .main .backwards {
-        background: url("img/pottery-3227903_1920.png"), rgba(24, 3, 36, 0.842);
+        background: url("../img/pottery-3227903_1920.png"), rgba(24, 3, 36, 0.842);
         background-repeat: no-repeat;
         background-position: 0; }
         .main .backwards .headline {
@@ -5936,11 +5936,11 @@ a.text-dark:hover, a.text-dark:focus {
         position: absolute;
         bottom: -30px !important; }
       .main .swiper-container .wrap-navigation .swiper-button-prev {
-        background-image: url("img/swiper-arrow.png");
+        background-image: url("../img/swiper-arrow.png");
         -webkit-transform: rotate(180deg);
                 transform: rotate(180deg); }
       .main .swiper-container .wrap-navigation .swiper-button-next {
-        background-image: url("img/swiper-arrow.png"); }
+        background-image: url("../img/swiper-arrow.png"); }
   .main .swiper-slide {
     display: flex;
     flex-direction: column;
@@ -6088,7 +6088,7 @@ a.text-dark:hover, a.text-dark:focus {
     height: 50px;
     border-radius: 50%;
     background-color: #f65b49;
-    background-image: url("img/fire.png"), linear-gradient(#f65b49, #d54435);
+    background-image: url("../img/fire.png"), linear-gradient(#f65b49, #d54435);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.5); }
@@ -6202,10 +6202,10 @@ a.text-dark:hover, a.text-dark:focus {
     border-top: 1px solid #20353d;
     border-bottom: 1px solid #20353d; }
     .accordion .ui-accordion-header .ui-icon.iconOpen {
-      background-image: url("img/arrow-top.png");
+      background-image: url("../img/arrow-top.png");
       width: 20px; }
     .accordion .ui-accordion-header .ui-icon.iconClosed {
-      background-image: url("img/arrow-bottom.png");
+      background-image: url("../img/arrow-bottom.png");
       width: 20px; }
   .accordion .ui-accordion-content {
     background-color: #20353d;
@@ -6372,20 +6372,20 @@ body {
           background-repeat: no-repeat;
           background-position: center center; }
       .header .desktop-menu .bottom .navbar .private-btn .cabinet a::before {
-        background-image: url("img/user.png"); }
+        background-image: url("../img/user.png"); }
       .header .desktop-menu .bottom .navbar .private-btn .cabinet:hover .nav-link::before {
-        background-image: url("img/user-hover.png"); }
+        background-image: url("../img/user-hover.png"); }
       .header .desktop-menu .bottom .navbar .private-btn .cart {
         padding-right: 0; }
         .header .desktop-menu .bottom .navbar .private-btn .cart .nav-link {
           padding-left: 45px;
           padding-right: 0;
           position: relative;
-          background-image: url("img/cart.png");
+          background-image: url("../img/cart.png");
           background-repeat: no-repeat;
           background-position: 10px 7px; }
           .header .desktop-menu .bottom .navbar .private-btn .cart .nav-link:hover {
-            background-image: url("img/cart-hover.png"); }
+            background-image: url("../img/cart-hover.png"); }
           .header .desktop-menu .bottom .navbar .private-btn .cart .nav-link .count {
             position: absolute;
             top: 0;
