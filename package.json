@@ -11,7 +11,7 @@
     "jquery-ui": "^1.12.1",
     "jquery.nice-number": "^2.0.0",
     "slick-carousel": "^1.8.1",
-    "swiper": "^4.5.0"
+    "swiper": "^6.5.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.2.0",
